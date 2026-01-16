@@ -3,23 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List App</title>
+    <title>Todo App</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <main>
-        <h1>To Do List App</h1>
-        <div class="add-todo-container">
-            <form action="" id="todo-form">
-                <input type="text" name="todo-input" id="todo-input"> 
-                <button>Add Todo</button>
-            </form>
-        </div>
-
-        <div id="todo-container"> 
-                <h3 >Please Add Some Todo</h3>  
-        </div>
-
-    </main>
-    <script src="./script.js"></script>
+    <div id="app">
+        <h1>Todo App</h1>
+        <input type="text" id="todo-input" placeholder="Add a new task...">
+        <button id="add-todo">Add</button>
+        <ul id="todo-list"></ul>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
