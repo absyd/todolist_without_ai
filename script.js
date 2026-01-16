@@ -92,44 +92,23 @@ function deleteTodo(id){
     addToLocalDB();
 }
 
-// Select elements
-const todoInput = document.getElementById('todo-input');
-const addTodoButton = document.getElementById('add-todo');
-const todoList = document.getElementById('todo-list');
 
-// Add event listener to the "Add" button
-addTodoButton.addEventListener('click', () => {
-  const taskText = todoInput.value.trim();
 
-  if (taskText) {
-    const listItem = document.createElement('li');
 
-    // Create task text
-    const taskSpan = document.createElement('span');
-    taskSpan.textContent = taskText;
-    taskSpan.addEventListener('click', () => {
-      taskSpan.classList.toggle('completed');
-    });
 
-    // Create delete button
-    const deleteButton = document.createElement('button');
-    deleteButton.textContent = 'Delete';
-    deleteButton.classList.add('delete');
-    deleteButton.addEventListener('click', () => {
-      todoList.removeChild(listItem);
-    });
 
-    // Append task and delete button to list item
-    listItem.appendChild(taskSpan);
-    listItem.appendChild(deleteButton);
 
-    // Add list item to the todo list
-    todoList.appendChild(listItem);
 
-    // Clear the input field
-    todoInput.value = '';
-  }
-});
+
+
+
+
+
+
+
+
+
+
 
 // adding event listener to the form to add toto
 todoForm.addEventListener("submit",function(e){
